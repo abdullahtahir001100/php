@@ -13,5 +13,8 @@ include "scheema/bonus.php";
 include "scheema/deduction.php";
 include "scheema/bonus_employ.php";
 include "scheema/deduction_employ.php";
+include "scheema/bonusmain.php";
+include "scheema/bonuschild.php";
+include "scheema/payroll.php";
 
 ?>

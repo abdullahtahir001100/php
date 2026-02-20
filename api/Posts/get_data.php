@@ -5,7 +5,7 @@ header("Content-Type: application/json");
 include "../../dbconfig/db_config.php";
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $result = $conn->query("SELECT p.*, d.id as department_id, COALESCE(d.department_name, 'No Department') as department_name
- FROM posts p
+ FROM Posts p
  LEFT JOIN departments d ON p.department_id = d.id
  WHERE p.id = $id
  ");

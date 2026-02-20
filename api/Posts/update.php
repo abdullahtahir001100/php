@@ -16,7 +16,7 @@ try {
     $status = $_POST['Post_name'] ?? '';
     $id = $_POST['id'] ?? 0;
 
-    $stmt = $conn->prepare("UPDATE posts SET Post_name = ?, department_id = ? WHERE id = ?");
+    $stmt = $conn->prepare("UPDATE Posts SET Post_name = ?, department_id = ? WHERE id = ?");
     $stmt->bind_param("sii", $status, $deptName, $id);
 
     if ($stmt->execute()) {

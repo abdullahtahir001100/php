@@ -17,7 +17,7 @@ try {
 
   
 
-    $stmt = $conn->prepare("INSERT INTO posts (Post_name, department_id) VALUES (?, ?)");
+    $stmt = $conn->prepare("INSERT INTO Posts (Post_name, department_id) VALUES (?, ?)");
     $stmt->bind_param("si", $status,$deptName);
 
     if ($stmt->execute()) {

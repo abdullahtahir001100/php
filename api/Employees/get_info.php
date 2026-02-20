@@ -1,6 +1,4 @@
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json");
 
 include "../../dbconfig/db_config.php";
 
@@ -12,7 +10,7 @@ $sql = "SELECT
   p.Post_name,
   p.created_at AS post_created_at
 FROM departments d
-LEFT JOIN posts p ON d.id = p.department_id
+LEFT JOIN Posts p ON d.id = p.department_id
 ORDER BY d.id
 ";
 

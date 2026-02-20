@@ -1,7 +1,5 @@
 
 <?php
-header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/json");
 
 include "../../dbconfig/db_config.php";
 $id = isset($_GET['employee_id']) ? (int)$_GET['employee_id'] : 0;
